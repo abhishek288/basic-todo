@@ -1,64 +1,202 @@
 .navbar{
+  display: flex;
+  justify-content:center;
+ background-color:rgba(0, 0, 0, 0.836);
+ width:100%;
+ color: white;
+}
+.navbar>h1{
+  margin:0;
+  margin-top:0.3rem;
+  margin-bottom:0.3rem;
+  font-size: 4vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+}
+.addbtn{
+  display: flex;
+  align-items:flex-start;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  border:1px solid black;
+  font-family: 'Karla', sans-serif;
+  font-size:1rem;
+  transition: 1s;
+}
+.addbtn:hover{
+  background-color:black;
   color:white;
 }
-
-.Main{
+.addbtn>img:hover{
+  width:16px;
+}
+.home{
+  margin-top:5.3rem;
   display: flex;
   flex-direction:column;
+  justify-content: center; 
+  align-items: center;
+  background-color: white;
+  width: 60vw;
+  border-radius: 1rem;
+}
+.home>button{
+  background-color: transparent;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 27px;
+  padding-bottom: 10px;
+  margin-top: 0.6rem;
+  margin-bottom: 0.7rem;
+  font-size:1.3rem;
+  transition: 0.5s;
+  width:21vw;
+  align-self: center;
+}
+.home>button:hover{
+  background-color:black;
+  color:white;
+  cursor: pointer;
+}
+.home>img{
+ align-self: center;
+ width:19vw;
+ margin-top:1.4rem;
+}
+.home>p{
+  margin-bottom: 3.4rem;
+}
+#task{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  align-items: center;
+}
+#task>img{
+  align-self: center;
+}
+#task>p{
+  align-self: center;
+}
+.main-content{
+  display: flex;
   justify-content:center;
-  height:100%;
+  flex-direction:column;
   align-items:center;
 }
-.list-items{
-  display:flex;
-  background-color: white;
-  justify-content: space-between;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-radius:5px;
-  align-items: center;
-  height:3rem;
-  min-width: 24rem;
-}
-.list-items>img{
-  padding-right:15px;
-  margin-left:8px;
-}
-.list-items>h4{
-  padding-left:15px
-}
 .input{
- margin-top: 5vh;
- margin-bottom: 5vh;
- width:27rem;
+  margin-top:1.3rem;
+  margin-bottom:0.3rem; 
+  border:none;
+  outline:none;
+  background-color: white;
+  display: flex;
+  justify-content:center;
+  border-radius: 0.3rem;
+  width: 33vw;
 }
 .input>input{
-  width:100%;
-  border: none;
-  outline:none;
-  text-indent: 4px;
-  padding:12px;
+ width: 33vw;
+ height:5vh;
+ padding:0px;
+ padding-left:5px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ outline:none;
+ text-indent:7px;
+ border-radius: 0.3rem;
+ outline:none;
+ border:none;
 }
-.App{
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   flex-direction:column;
+.input>img{
+  padding-right: 9px;
+  color:black;
 }
-.body::-webkit-scrollbar {
-  display: none;
+.list-items{
+  display: flex;
+  align-self: center;
+  justify-content:space-between;
+   min-width: 32vw;
+  /* border:1px solid black; */
+  height: 5vh;
+  align-items:center;
+  margin-top:0.3rem;
+  margin-bottom:0.3rem;
+  border-radius: 0.3rem;
+  text-decoration-skip: solid;
+  cursor:pointer;
+  padding:8px;
+  background-color:white;
+  transition:0.5s;
+}
+.list-items:hover{
+  min-width:33vw;
+  border:1px solid black;
+}
+.complete{
+  width:31vw;
+  display: flex;
+  justify-content:space-between;
+  font-weight: 400;
+}
+.complete>h3{
+  font-weight:300;
+}
+.item{
+  display: flex;
+  padding-left:4px;
+}
+.item>h4{
+  padding-left: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:200;
+}
+.list-items>img{
+  padding-right: 4px;
+  cursor:pointer;
+}
+.list-items>img:hover{
+  width: 18px;
 }
 @media only screen and (max-width: 768px){
-  .Main{
-    width:250px;
+  .navbar>h1{
+    margin:0;
+    margin-top:1.3rem;
+    margin-bottom:1.7rem;
+    font-size: 10vw;
   }
   .input{
-   width:100%;
-   margin-right:5vw;
+    width:65vw
+  }
+  .input>input{
+    width:54vw;
+    height:7vh;
   }
   .list-items{
-    min-width:100%;
+    width:64vw;
   }
-  
-  
+  .complete{
+    width:62vw;
+  }
+  #task{
+    font-size:12px;
+  }
+  .home{
+    width:90vw;
+  }
+  .home>button{
+    width:65vw;
+  }
+  .home>img{
+    width:65vw;
+  }
 }
+
